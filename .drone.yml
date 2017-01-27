@@ -1,7 +1,11 @@
+workspace:
+  base: /
+  path: var/www/html
+
 pipeline:
   linting:
     image: php:5.6-apache
     commands:
-      - php -f index.php
+      - php -f /var/www/html/index.php
     when:
       event: pull_request
