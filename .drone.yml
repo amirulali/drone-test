@@ -3,5 +3,3 @@ pipeline:
     image: php:5.6-apache
     commands:
       - php -f /var/www/html/index.php
-    when:
-      event: pull_request
