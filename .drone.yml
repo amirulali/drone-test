@@ -3,4 +3,5 @@ pipeline:
     image: php:5.6-apache
     commands:
       - php -l /drone/src/github.com/amirulali/drone-test/index.php
-
+    when:
+      event: pr
