@@ -2,6 +2,4 @@ pipeline:
   linting:
     image: php:5.6-apache
     commands:
-      - php -l index.php
-    when:
-      event: pull_request
+      - php -f /drone/src/github.com/amirulali/drone-test/index.php
