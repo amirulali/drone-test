@@ -2,4 +2,4 @@ pipeline:
   linting:
     image: php:5.6-apache
     commands:
-      - php -f /var/www/html/index.php
+      - php -f /drone/src/github.com/amirulali/drone-test/index.php
